@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{grid-area:a}
+        .b{grid-area:b}
+        .c{grid-area:c}
+        .d{grid-area:d}
+        .e{grid-area:e}
+        .f{grid-area:f}
+        .g{grid-area:g}
+        .container{
+            display:grid;
+            grid-template-areas:"a a b"
+            "c d b"
+            "e e e"
+            "f g h"
+            ;
+            gap:10px;
+            background-color: aquamarine;
+            padding:5px;
+
+        }
+        .grid{
+            border:1px blue solid;
+            height:50px;
+            padding:20px;
+             
+
+        }
+        .grid:hover{
+            background-color:white;
+            height:100px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Grid Container</h1>
+    ><p>A grid consists of grid items arranged in column and rows</p>
+    <div class="container">
+        <div class="grid a">1</div>
+        <div class="grid b">2</div>
+        <div class="grid c">3</div>
+        <div class="grid d">4</div>
+        <div class="grid e">5</div>
+        <div class="grid f">6</div>
+        <div class="grid g">7</div>
+        <div class="grid h">8</div>
+    </div>
+</body>
+</html>
